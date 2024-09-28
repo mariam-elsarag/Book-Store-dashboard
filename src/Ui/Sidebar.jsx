@@ -6,6 +6,7 @@ import { FaRegCircleUser } from "react-icons/fa6";
 import { useDispatch, useSelector } from "react-redux";
 import { resetAuth } from "../features/Auth/AuthSlice";
 import { IoBookOutline } from "react-icons/io5";
+import { IoLibraryOutline } from "react-icons/io5";
 const list = [
   { id: 0, icon: <LuUsers size={18} />, title: "Users", link: "users" },
   { id: 1, icon: <IoBookOutline size={18} />, title: "Books", link: "book" },
@@ -17,9 +18,9 @@ const list = [
   },
   {
     id: 2,
-    icon: <FaRegUser size={18} />,
-    title: "My Profile",
-    link: "profile",
+    icon: <IoLibraryOutline size={18} />,
+    title: "Book genres",
+    link: "genre",
   },
 ];
 

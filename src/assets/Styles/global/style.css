@@ -33,12 +33,12 @@
 
 .Toastify__progress-bar--info,
 .Toastify__progress-bar--success {
-  background-color: #172554 !important;
+  background-color: var(--primary-600) !important;
 }
 
 .Toastify__toast--success .Toastify__toast-body .Toastify__toast-icon svg,
 .Toastify__toast--info .Toastify__toast-body .Toastify__toast-icon svg {
-  fill: #172554 !important;
+  fill: var(--primary-600) !important;
 }
 
 .p-accordion-tab .p-accordion-header-link {
@@ -54,6 +54,84 @@
 }
 .p-accordion-tab .p-accordion-header-link .p-icon {
   display: none;
+}
+
+.modal {
+  width: 600px;
+  max-width: 95%;
+}
+.modal .p-dialog-header {
+  color: var(--primary-600);
+  border-bottom: 1px solid var(--light-gray);
+  padding: 16px;
+}
+.modal .p-dialog-header-icon:hover, .modal .p-dialog-header-icon:focus {
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+.modal .p-dialog-header h1 {
+  font-weight: 700;
+  font-size: 20px;
+}
+.modal.noHeader .p-dialog-header {
+  border: none;
+}
+.modal.noHeader .p-dialog-header svg {
+  color: var(--natural-dark);
+}
+.modal .p-dialog-content {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.modal .p-dialog-content::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+.transparent_modal {
+  box-shadow: none !important;
+}
+.transparent_modal .content::-webkit-scrollbar {
+  width: 6px !important;
+}
+.transparent_modal .p-accordion-content,
+.transparent_modal .p-dialog-header {
+  background: transparent !important;
+}
+.transparent_modal .p-dialog-header {
+  padding: 0 16px 8px !important;
+}
+.transparent_modal .p-dialog-header-icon svg,
+.transparent_modal .p-dialog-header-icon svg path {
+  color: #fff;
+}
+.transparent_modal .p-dialog-header-icons {
+  order: 1;
+}
+.transparent_modal .p-dialog-title {
+  order: 2;
+}
+.transparent_modal .p-dialog-content {
+  background-color: white !important;
+  border-radius: 12px !important;
+  -webkit-border-radius: 12px !important;
+  -moz-border-radius: 12px !important;
+  -ms-border-radius: 12px !important;
+  -o-border-radius: 12px !important;
+  padding: 40px 0;
+  scrollbar-width: none;
+}
+
+body:dir(ltr) .register_modal .p-dialog-header h1 {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.downloadAppPopup .p-dialog-content {
+  padding: 0px auto !important;
+}
+.downloadAppPopup .p-dialog-header {
+  padding: 10px !important;
 }
 
 @tailwind base;

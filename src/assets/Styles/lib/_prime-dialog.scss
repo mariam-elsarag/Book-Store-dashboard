@@ -1,0 +1,92 @@
+.modal {
+  width: 600px;
+  max-width: 95%;
+
+  .p-dialog-header {
+    color: var(--primary-600);
+    border-bottom: 1px solid var(--light-gray);
+    padding: 16px;
+
+    &-icon {
+      &:hover,
+      &:focus {
+        border: none;
+        box-shadow: none;
+        outline: none;
+      }
+    }
+    h1 {
+      font-weight: 700;
+      font-size: 20px;
+    }
+  }
+  &.noHeader {
+    .p-dialog-header {
+      border: none;
+      svg {
+        color: var(--natural-dark);
+      }
+    }
+  }
+  .p-dialog-content {
+    padding-left: 16px;
+    padding-right: 16px;
+    &::-webkit-scrollbar {
+      width: 0.3rem;
+    }
+  }
+}
+
+.transparent_modal {
+  box-shadow: none !important;
+  .content {
+    &::-webkit-scrollbar {
+      width: 6px !important;
+    }
+  }
+  .p-accordion-content,
+  .p-dialog-header {
+    background: transparent !important;
+  }
+  .p-dialog-header {
+    padding: 0 16px 8px !important;
+  }
+  .p-dialog-header-icon svg,
+  .p-dialog-header-icon svg path {
+    color: #fff;
+  }
+  .p-dialog-header-icons {
+    order: 1;
+  }
+  .p-dialog-title {
+    order: 2;
+  }
+  .p-dialog-content {
+    background-color: white !important;
+    border-radius: 12px !important;
+    -webkit-border-radius: 12px !important;
+    -moz-border-radius: 12px !important;
+    -ms-border-radius: 12px !important;
+    -o-border-radius: 12px !important;
+    padding: 40px 0;
+    scrollbar-width: none;
+  }
+}
+body:dir(ltr) {
+  .register_modal {
+    .p-dialog-header {
+      h1 {
+        font-weight: 700;
+        font-size: 20px;
+      }
+    }
+  }
+}
+.downloadAppPopup {
+  .p-dialog-content {
+    padding: 0px auto !important;
+  }
+  .p-dialog-header {
+    padding: 10px !important;
+  }
+}

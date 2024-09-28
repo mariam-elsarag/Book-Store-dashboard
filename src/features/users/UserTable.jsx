@@ -15,7 +15,7 @@ import { Dropdown } from "primereact/dropdown";
 const columns = ["full_name", "email", "role"];
 const headerColumns = ["full name", "email", "role"];
 
-const UserList = () => {
+const UserTable = () => {
   const navigate = useNavigate();
   const { token } = useSelector((store) => store.auth);
   const [data, setData] = useState();
@@ -146,4 +146,4 @@ const UserList = () => {
   );
 };
 
-export default UserList;
+export default UserTable;

@@ -12,7 +12,7 @@ const BookTable = lazy(() => import("./features/Book/BookTable"));
 const AddBook = lazy(() => import("./features/Book/BookCrud"));
 // users
 const User_Container = lazy(() => import("./features/users/UserContainer"));
-const User_List = lazy(() => import("./features/users/UserList"));
+const User_List = lazy(() => import("./features/users/UserTable"));
 const User_Crud = lazy(() => import("./features/users/CrudUser"));
 
 // page not found
@@ -22,7 +22,8 @@ const Login = lazy(() => import("./features/Auth/Login"));
 // orders
 const Order_Container = lazy(() => import("./features/Orders/OrderContainer"));
 // profile
-const Profile = lazy(() => import("./features/Profile/Profile"));
+const Book_Genre = lazy(() => import("./features/Book-genres/BookGenres"));
+
 const App = () => {
   const { token } = useSelector((store) => store.auth);
 
@@ -47,7 +48,7 @@ const App = () => {
             {/* order */}
             <Route path="orders" element={<Order_Container />}></Route>
             {/* profiel */}
-            <Route path="profile" element={<Profile />} />
+            <Route path="genre" element={<Book_Genre />} />
             <Route path="*" element={<PageNotFound />} />
           </Route>
         ) : (

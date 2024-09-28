@@ -22,6 +22,9 @@ export default {
         "body-bg": "#FAFBFC",
         error: "#b50808",
       },
+      boxShadow: {
+        main: "0px 0px 10px #00000012",
+      },
     },
   },
   plugins: [],
