@@ -17,7 +17,7 @@ const list = [
     link: "orders",
   },
   {
-    id: 2,
+    id: 3,
     icon: <IoLibraryOutline size={18} />,
     title: "Book genres",
     link: "genre",
