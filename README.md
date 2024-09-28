@@ -4,7 +4,7 @@
 
 This is a simple dashboard for managing a book store, built with **React.js** on the front end. The project is part of a practice exercise to build a full-stack web application, with the back end developed separately using **Node.js**. The dashboard allows users to manage books and their associated data within the bookstore system.
 
-![Book Store GIF](public/gif/video.gif)
+![Book Store video](public/gif/video.mp4)
 
 ## Technologies Used
 
