@@ -32,6 +32,7 @@ const OrderContainer = () => {
           signal,
         });
         const fetchedData = await response.data.results;
+
         const formattedData = fetchedData.map((order) => ({
           bookTitle: order.book.title,
           userFullName: order.user.full_name,
