@@ -8,11 +8,13 @@ This is a simple dashboard for managing a book store, built with **React.js** on
 
 ### Frontend
 
-- **React.js** – A JavaScript library for building user interfaces.
-- **PrimeReact** – A rich set of React UI components.
-- **Tailwind CSS** – A utility-first CSS framework for styling.
-- **Sass** – A preprocessor for CSS to help with styling structure.
-- **React Router DOM** – For routing and navigation between views.
+| Frontend         |
+| ---------------- |
+| React.js         |
+| PrimeReact       |
+| Tailwind CSS     |
+| Sass             |
+| React Router DOM |
 
 ### Backend
 
